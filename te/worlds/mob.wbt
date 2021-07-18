@@ -1,0 +1,93 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  basicTimeStep 20
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.02165885925847603 0.9467871021289667 0.3211309344455231 3.529580482561175
+  position -6.9103621117703895 12.306211746963458 -17.570382007458615
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 15 15
+  wallHeight 1
+}
+Pioneer3at {
+  translation 0.000633603 0.10552 -3.9057
+  rotation -4.0652798813467925e-08 0.9999999708130294 -0.0002416069929482236 3.14151
+  name "mob"
+  controller "ros"
+  controllerArgs [
+    "--name=mob"
+  ]
+  extensionSlot [
+    Camera {
+      translation 0 0.3 -0.16
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.360784 0.207843 0.4
+            }
+          }
+          geometry Box {
+            size 0.05 0.05 0.1
+          }
+        }
+      ]
+      width 640
+      height 480
+    }
+    GPS {
+      speedNoise 1
+    }
+    InertialUnit {
+    }
+    SickLms291 {
+      translation 0 0.23 0
+      rotation 0 0 1 3.1415926
+      name "lidar"
+      noise 0.01
+    }
+  ]
+}
+AdvertisingBoard {
+  translation -0.39 1.71 6.99
+}
+Bed {
+  translation 3.28 0 0
+}
+Bed {
+  translation -3.59 0 3.89
+  name "bed(1)"
+}
+SimpleChair {
+  translation -3.3 0.909652 -0.12031
+  rotation -0.9999999999971592 2.238268813368407e-06 8.196731185558886e-07 0.00034541688370929365
+}
+SimpleChair {
+  translation 3.519727784722135 0.9096985692343151 -4.039842834845393
+  rotation -9.971255891312345e-05 0.9999999801145858 0.00017270852183025122 2.094400017994361
+  name "simple chair(2)"
+}
+SimpleChair {
+  translation -3.45978 0.909699 5.97527
+  rotation -4.6277304596475515e-05 0.999999984015096 0.00017270847872510552 2.6179900087656405
+  name "simple chair(1)"
+}
+Toilet {
+  translation 1.42 0 5.57
+  rotation 0 1 0 -1.5707953071795862
+}
+Toilet {
+  translation 3.03 0 2.09
+  rotation 0 1 0 -1.5707953071795862
+  name "toilet(1)"
+}
+LandscapePainting {
+  translation 2.87998 0.5 7.18
+  rotation 0 1 0 3.14159
+}

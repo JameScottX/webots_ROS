@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/jame/Desktop/my_ws/src/te/build/gtest/googlemock/gtest/src -Wl,-rpath,/home/jame/Desktop/my_ws/src/te/build/gtest/googlemock/gtest/src -lpthread 

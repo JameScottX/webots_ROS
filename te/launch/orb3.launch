@@ -1,0 +1,10 @@
+<launch>
+    <arg name="path_to_vacabulary" default="/home/jame/Public/ORB_SLAM3/Vocabulary/ORBvoc.txt"/>
+    <arg name="path_to_settings" default="$(find te)/yaml/camera.yaml"/>
+    <!--启动ORB-SLAM2 RGBD-->
+    <node name ="orb3test" pkg="te" type="orb3test" 
+        args= "$(arg path_to_vacabulary) $(arg path_to_settings)" respawn="true" output="screen">
+    </node>
+
+    <include file ="$(find te)/launch/rviz.launch"/> -->
+</launch>

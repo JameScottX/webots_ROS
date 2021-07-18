@@ -1,0 +1,12 @@
+<launch>
+
+  
+  <arg name="rvizconfig" default="$(find te)/rviz/te.rviz" />
+  <arg name="gui" default="true" />
+  <param name="use_gui" value="$(arg gui)"/>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)"  />
+
+</launch>
+
+
