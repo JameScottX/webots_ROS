@@ -17,7 +17,7 @@
          
 　　The project itself is a ROS package. You only need to download it in your `catkin_workspace` and change the path in the launch file, then run `catkin_make`.  
 　　For more information:   
-　　　　My blog  
+　　　　[**My blog**](https://www.guyuehome.com/34537)  
     
     
   　　
