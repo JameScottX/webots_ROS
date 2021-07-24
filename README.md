@@ -9,7 +9,7 @@
   
   
   ## Requirements  
-　　[**Intall Webots**](https://cyberbotics.com/)  
+　　[**Install Webots**](https://cyberbotics.com/)  
 　　[**Install ROS and "webots_ros" Package**](https://cyberbotics.com/doc/guide/tutorial-8-using-ros)  
 　　[**Install Gmapping**](http://wiki.ros.org/gmapping)  
 　　[**Install ORB3-SLAM**](https://github.com/UZ-SLAMLab/ORB_SLAM3)  
